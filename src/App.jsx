@@ -8,6 +8,7 @@ function App() {
 
 
   function persistData(newList){
+    localStorage.clear()
     localStorage.setItem('todos', JSON.stringify({todos: newList}));
   }
   
